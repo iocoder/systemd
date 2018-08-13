@@ -1,0 +1,12 @@
+pkgname=systemd
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="My own implementation of systemd"
+arch=('x86_64')
+depends('sh')
+
+package() {
+    mkdir -p ${pkgdir}/usr/bin
+    cp ../init ${pkgdir}/usr/bin/init
+    chmod +x ${pkgdir}/usr/bin/init
+}
