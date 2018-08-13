@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# increase live size
+sudo mount / -o remount,size=8G
+
 # install dependencies
 sudo pacman -Sy gobject-introspection gperf gtk-doc intltool kmod \
                 hwids kbd kmod util-linux fakeroot binutils wget \
