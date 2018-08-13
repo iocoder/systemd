@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # install dependencies
-sudo pacman -Sy gobject-introspection gperf gtk-doc intltool kmod
-sudo pacman -Sy hwids kbd kmod util-linux
-sudo pacman -Sy fakeroot binutils wget
+sudo pacman -Sy gobject-introspection gperf gtk-doc intltool kmod \
+                hwids kbd kmod util-linux fakeroot binutils wget \
+                autoconf automake pkg-config libtool gcc
 
 # create eudev
 mkdir eudev
